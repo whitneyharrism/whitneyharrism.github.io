@@ -36,8 +36,7 @@ header, footer, footer a {
 header img {
   width: 200px;
   height: auto;
-  padding: 1px;
-  border: 1px solid black;
+  border: 2px solid black;
   float: right;
 }
 
