@@ -10,6 +10,9 @@ header img, .headings{
     /* margin: 10px; */
 }
 
+header img{
+    width: 50px;
+}
 .headings, footer{
     color: #98BECB;
 }
