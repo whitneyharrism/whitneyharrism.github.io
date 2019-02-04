@@ -21,6 +21,12 @@ nav {
     overflow: hidden;
     background-color: #CFF0B1;
     /* border: 1px solid #437616; */
+    margin: none;
+}
+
+nav ul{
+    margin-top: 0;
+    margin-left: 0;
 }
 
 nav li{
