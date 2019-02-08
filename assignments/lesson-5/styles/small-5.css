@@ -89,3 +89,8 @@ footer {
 body {
     margin: 0.5em;
 }
+
+a.menu {
+    background-color: #53B000;
+    color: #CFF0B1;
+}
