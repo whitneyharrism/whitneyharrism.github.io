@@ -44,12 +44,15 @@ nav li a {
     text-decoration: none;
 }
   
-nav li a:hover:not(.active) {
+nav li a:hover{
     background-color: #8DC45C;
     color: #CFF0B1;
 }
 
-nav li a.active {background-color: #437616;}
+nav li a.active {
+    background-color: #437616;
+    color: #CFF0B1;
+}
   
 nav li.right {float: right;}
   
@@ -81,4 +84,8 @@ footer {
     font-size: 10px;
     margin-top: 5px;
     border: 5px solid #98BECB
+}
+
+body {
+    margin: 0.5em;
 }
