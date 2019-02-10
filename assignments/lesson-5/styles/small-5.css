@@ -59,6 +59,8 @@ nav li.right {float: right;}
 @media screen and (max-width: 600px) {
     nav li.right, 
     nav li {float: none;}
+    main .weatherwidget-io{display: none;}
+    main img{display: none;}
 }
 
 h2, h3{
