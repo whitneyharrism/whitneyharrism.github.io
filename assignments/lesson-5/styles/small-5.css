@@ -59,7 +59,13 @@ nav li.right {float: right;}
 @media screen and (max-width: 600px) {
     nav li.right, 
     nav li {float: none;}
-    main .weatherwidget-io{display: none;}
+    main .weatherwidget-io{
+        visibility: hidden;
+        display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
     main img{display: none;}
 }
 
@@ -72,6 +78,8 @@ h2{
 }
 
 .firstarticle{
+    margin-top: 5px;
+    margin-right: 5px;
     text-align: center;
     border: 2px solid #29195B;
 }
