@@ -67,6 +67,10 @@ nav li.right {float: right;}
         left: -9999px;
     }
     main img{display: none;}
+    .firstarticle{
+        position: absolute;
+        top: 600px;
+    }
 }
 
 h2, h3{
