@@ -1,0 +1,17 @@
+@media screen and (min-width: 600px) {
+    nav li a.menu{display: none;}
+    button{display: none;}
+    .firstarticle{
+        width: 25em;
+        background: rgba(152, 190, 203, 0.8);
+        float: left;
+    }
+    h3, p{
+        color: #29195B;
+    }
+    main img{
+        margin-top: 10px;
+        height: 30em;
+        border: 2px solid #29195B;
+    }
+}

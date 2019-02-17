@@ -1,0 +1,128 @@
+#sitetitle, footer{
+    text-align: center;
+    background-color: #437889;
+    border: 5px solid #98BECB;
+}
+
+header img, .headings{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header img{
+    width: 100px;
+}
+.headings, footer{
+    color: #98BECB;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #CFF0B1;
+    margin: none;
+}
+
+nav ul{
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    vertical-align: middle;
+}
+
+nav li a {
+    display: block;
+    color: #437616;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover{
+    background-color: #8DC45C;
+    color: #CFF0B1;
+}
+
+nav li a.active {
+    background-color: #437616;
+    color: #CFF0B1;
+}
+  
+nav li.right {float: right;}
+  
+@media screen and (max-width: 600px) {
+    nav li.right, 
+    nav li {float: none;}
+    main .weatherwidget-io{
+        visibility: hidden;
+        display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .firstimg {display: none;}
+    .firstarticle{
+        position: relative;
+        top: -230px;
+    }
+    figure{
+        position: relative;
+        top: -230px;
+        left: -20px;
+    }
+}
+
+h2, h3{
+    color: #615097;
+}
+
+h2{
+    text-align: center;
+}
+
+.firstarticle{
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    border: 2px solid #29195B;
+}
+
+p{
+    color: #808E92;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer {
+    font-size: 10px;
+    margin-top: 5px;
+    border: 5px solid #98BECB
+}
+
+body {
+    margin: 0.5em;
+}
+
+a.menu {
+    background-color: #53B000;
+    color: #CFF0B1;
+}
+
+.motto{
+    margin: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+}
