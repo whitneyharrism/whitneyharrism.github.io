@@ -1,6 +1,9 @@
 @media screen and (min-width: 1000px) {
     nav li a.menu{display: none;}
-    nav li{flex-direction: row;}
+    nav li{
+        display:inline-flex;
+        flex-direction: row;
+    }
     button{display: none;}
     .firstarticle{
         width: 25em;
