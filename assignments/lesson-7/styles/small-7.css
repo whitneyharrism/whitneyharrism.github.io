@@ -33,7 +33,7 @@ nav li{
     margin: 0px;
     padding: 0px;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
 }
 
 nav li a {
