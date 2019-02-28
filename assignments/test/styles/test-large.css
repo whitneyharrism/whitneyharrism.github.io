@@ -1,0 +1,7 @@
+@media screen and (min-width: 1000px) {
+    .menu{display: none;}
+    nav li{
+        display:inline-flex;
+        flex-direction: row;
+    }
+}

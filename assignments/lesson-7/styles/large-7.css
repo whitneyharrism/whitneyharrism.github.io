@@ -1,10 +1,9 @@
 @media screen and (min-width: 1000px) {
-    nav li a.menu{display: none;}
+    .menu{display: none;}
     nav li{
         display:inline-flex;
         flex-direction: row;
     }
-    button{display: none;}
     .firstarticle{
         width: 25em;
         background: rgba(152, 190, 203, 0.8);
@@ -13,12 +12,5 @@
     h3, p{
         color: #29195B;
     }
-    main img{
-        margin-top: 10px;
-        height: 30em;
-        border: 2px solid #29195B;
-    }
-    .grid{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    
 }

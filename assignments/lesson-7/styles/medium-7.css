@@ -1,5 +1,9 @@
-@media screen and (min-width: 1000px) and (max-width: 999px){
-    .grid{
-        grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 750px) and (max-width: 999px){
+    nav li{
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .menu{
+        display: none;
     }
 }
