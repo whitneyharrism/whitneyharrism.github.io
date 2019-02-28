@@ -1,0 +1,41 @@
+body{
+    font-family: Ubuntu, sans-serif;
+}
+
+tr:nth-child(odd){
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(even){
+    background-color: #e7ffed;
+}
+
+td{
+    text-align: center;
+}
+tr:first-child{
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #7fb9c2;
+}
+th{
+    font-size: 0.8em;
+    color: white;
+    background-color: #628ca6;
+    padding: 5px;
+}
+tfoot tr:last-child{
+    font-weight: normal;
+    font-size: 0.7em;
+    background-color: #7fb9c2;
+}
+tr:nth-child(5) td:nth-child(3){
+    background-color: #628ca6;
+    color: white;
+}
+tr:nth-child(6) td:nth-child(1){
+    font-style: italic;
+}
+tr{
+    font-size: 0.8em;
+}
