@@ -95,3 +95,14 @@ body {
     align-items: center;
     margin: 2em;
 }
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
