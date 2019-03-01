@@ -15,7 +15,7 @@
         height: 100%;
         object-fit: cover;
     }
-    .shadow:hover {
+    .grid figure:hover {
         box-shadow: 0 0 50px #333;
     }
     .grid{

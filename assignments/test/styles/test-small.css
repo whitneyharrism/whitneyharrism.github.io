@@ -95,3 +95,25 @@ body {
     align-items: center;
     margin: 2em;
 }
+
+#weatherwidget{
+    width: 850px;
+}
+
+iframe{
+    display: block;
+}
+
+iframe a{
+    width: 20px;
+    z-index: 1;
+    height: 92px;
+    text-indent: -9999em;
+    margin: -92px 0 0 0;
+}
+
+@media screen and (max-width: 749px){
+    #weatherwidget{
+        display: none;
+    }
+}
