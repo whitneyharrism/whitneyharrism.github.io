@@ -1,12 +1,12 @@
 body{
-    font-family: Ubuntu, sans-serif;
-}
-
-tr:nth-child(odd){
-    background-color: #e7f0ed;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 tr:nth-child(even){
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(odd){
     background-color: #e7ffed;
 }
 
