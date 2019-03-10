@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/test-small.css">
-    <link rel="stylesheet" href="styles/test-medium.css">
-    <link rel="stylesheet" href="styles/test-large.css">
+    <link rel="stylesheet" href="styles/small-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+    <link rel="stylesheet" href="styles/large-7.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div id="sitetitle">
-            <!-- <img src="images/weather-min.png" alt="Awesome image"> -->
+            <img src="images/weather-min.png" alt="Awesome image">
             <section class="headings">
                 <h1>South Eastern Idaho</h1>
                 <div class="motto">Weather for You!</div>
@@ -22,19 +22,30 @@
         <nav>
             <ul id="primaryNav">
                 <li><button onclick="toggleMenu()"><a class="menu" href="#"><b>&equiv;</b> Menu</a></li></button>
-                <div id="list" class="">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="preston-7.html">Preston</a></li>                
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="stormcenter.html">Storm Center</a></li>
-                    <li><a href="gallery-7.html">Gallery</a></li>
+                <div id="list" class="hide">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="preston-7.html">Preston</a></li>
+                        <li><a href="#">Soda Springs</a></li>
+                        <li><a href="#">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery-7.html">Gallery</a></li>
+                    </ul>
                 </div>
             <ul>
         </nav>
     </header>
     <main>
-        <div class="flex-grid">
+        <div class="home">
+            <div class="townArticle">
+                <h3>Town Events</h3>
+                <h5>Preston</h5>
+                <p><span id="prestonEvents"></span></p>
+                <h5>Soda Springs</h5>
+                <p><span id="sodaEvents"></span></p>
+                <h5>Fish Haven</h5>
+                <p><span id="fishEvents"></span></p>
+            </div>
             <div class="towns">
                 <a href="preston-7.html">
                     <div class="card">
@@ -53,7 +64,7 @@
                         <img src="" alt="">
                         <div class="container">
                             <h4><b>Soda Springs</b></h4>
-                            <p><strong>Motto: </strong><span id="sodaMotto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid. Maiores adipisci ea soluta similique quo reiciendis provident temporibus, voluptatibus officiis. Odio delectus, perferendis tenetur aperiam vitae amet. Dicta, rem.</span></p>
+                            <p><strong>Motto: </strong><span id="sodaMotto"></span></p>
                             <p><strong>Year Founded: </strong><span id="sodaYear"></span></p>
                             <p><strong>Population: </strong><span id="sodaPop"></span></p>
                             <p><strong>Annual Rainfall: </strong><span id="sodaRain"></span></p>
@@ -81,5 +92,6 @@
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/toggleMenu.js"></script>
     <script src="scripts/winchill.js"></script>
+    <script src="scripts/townInfo.js"></script>
 </body>
 </html>

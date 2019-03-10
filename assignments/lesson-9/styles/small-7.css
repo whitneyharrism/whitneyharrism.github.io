@@ -49,10 +49,6 @@ nav li a:hover {
     color: #CFF0B1;
 }
 
-.hide {
-    display: none;
-}
-
 nav li a.active {
     background-color: #437616;
     color: #CFF0B1;
@@ -105,4 +101,52 @@ body {
 .grid{
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.home{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+}
+
+.townArticle{
+    width: 300px;
+    margin: 10px;
+    border: 2px solid #29195B;
+    padding: 2px 16px;
+    align-self: center;
+    align-self: flex-start;
+}
+
+.home .towns .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.home .towns .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.home .towns .container {
+    padding: 2px 16px;
+}
+
+.home .towns{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    flex-flow: nowrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 750px){
+    .hide {
+        display: none;
+    }
+    .home .towns .card{
+        width: 100%;
+    }
 }
