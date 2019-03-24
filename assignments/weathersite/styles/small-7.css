@@ -181,3 +181,20 @@ a {
         width: 100%;
     } */
 }
+
+.forecast article {
+    margin: 10px;
+}
+
+.forecast h1, h2 {
+    text-align: center;
+}
+
+.forecast section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.forecast .block {
+    display: block;
+}
