@@ -1,0 +1,159 @@
+#sitetitle, footer{
+    text-align: center;
+    background-color: #437889;
+    border: 5px solid #98becb;
+    color: #98BECB;
+}
+header img, .headings{
+    display: inline-block;
+    vertical-align: middle;
+}
+header img{
+    width: 100px;
+}
+
+nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+    flex-direction: column;
+    background-color: #CFF0B1;
+}
+
+nav li{
+    list-style-type: none;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav button {
+    display: block;
+    background-color: transparent;
+    border: none;
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+
+nav li a { 
+    display: block;
+	color:#437616;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+nav li a:hover {
+	background-color: #8DC45C;
+    color: #CFF0B1;
+}
+
+nav li a.active {
+    background-color: #437616;
+    color: #CFF0B1;
+}
+
+h2, h3{
+    color: #615097;
+}
+
+h2{
+    text-align: center;
+}
+
+.firstarticle{
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    border: 2px solid #29195B;
+}
+
+p{
+    color: #808E92;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer {
+    font-size: 10px;
+    margin-top: 5px;
+    border: 5px solid #98BECB
+}
+
+body {
+    margin: 0.5em;
+}
+
+#daily{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.home{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+}
+
+.townArticle{
+    width: 300px;
+    margin: 10px;
+    border: 2px solid #29195B;
+    padding: 2px 16px;
+    align-self: center;
+    align-self: flex-start;
+}
+
+.home .towns .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.home .towns .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.home .towns .container {
+    padding: 2px 16px;
+}
+
+.home .towns{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    /* flex-flow: nowrap; */
+}
+
+.soda{
+    width: 350px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 750px){
+    .hide {
+        display: none;
+    }
+    .home .towns{
+        flex-flow: wrap;
+    }
+    .home .towns .card{
+        width: 100%;
+    }
+}
