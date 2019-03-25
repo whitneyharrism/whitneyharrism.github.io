@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/small-7.css">
     <link rel="stylesheet" href="styles/medium-7.css">
     <link rel="stylesheet" href="styles/large-7.css">
-    <title>Document</title>
+    <title>Preston</title>
 </head>
 <body>
     <header>
@@ -22,8 +22,8 @@
         <nav>
             <ul id="primaryNav">
                 <li><button onclick="toggleMenu()"><a class="menu" href="#"><b>&equiv;</b> Menu</a></li></button>
-                <div id="list" class="">
-                <li><a href="#">Home</a></li>
+                <div id="list" class="hide">
+                <li><a href="home.html">Home</a></li>
                 <li><a class="active" href="preston-7.html">Preston</a></li>                
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
@@ -34,13 +34,8 @@
         </nav>
     </header>
     <main>
-        <h2>Preston</h2>
-        <div id="daily">
-            <h3>Weather Summary from OpenWeatherMap</h3>
-            <span>Temperature: <span id="temp"></span></span>
-            <span>Wind Speed: <span id="windspeed"></span></span>
-        </div>
-        <div class="forecast">
+        <div class="cities">
+            <div class="forecast">
                 <h2>Five-Day Forecast</h2>
                 <section>
                     <article>
@@ -64,23 +59,34 @@
                         <span id="day5Temp"></span>&deg; F
                     </article>
                 </section>
+                <p>Weather and Forecast from OpenWeatherMap</p>
             </div>
-        <div class="firstarticle">
-            <h3>About Preston</h3>
-            <p>Preston, Idaho is a small town inside of Cache Valley. It is surrounded by beautiful mountains and has unlimited recreational activities.</p>
+            <div class="firstarticle">
+                <h3>About Preston</h3>
+                <p>Preston, Idaho is a small town inside of Cache Valley. It is surrounded by beautiful mountains and has
+                    unlimited recreational activities.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, veritatis animi molestiae obcaecati
+                    ea, magnam quo illum laborum sed eos labore perspiciatis, quos dolorem! Modi reprehenderit debitis sunt
+                    nobis quibusdam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem voluptatum dolorem accusantium
+                    voluptate dolorum incidunt autem officiis? Mollitia dolore quos velit architecto eveniet totam sequi ad
+                    maiores, quasi exercitationem?</p>
+            </div>
+            <div id="townEvents">
+                <h3>Town Events</h3>
+                <p><span id="prestonEvents1"></span></p>
+                <p><span id="prestonEvents2"></span></p>
+                <p><span id="prestonEvents3"></span></p>
+            </div>
         </div>
-        <figure>
-            <img src="images/cit230_image_franklin_small-min.jpeg" alt="Photo of Preston, ID"
-            srcset="images/cit230_image_franklin_small-min.jpeg 200w, images/cit230_image_franklin_large-min.jpeg 1200w">
-            <figcaption>Preston, ID</figcaption>
-        </figure>
     </main>
     <footer>
             &copy; <span id="currentDate"></span>&boxV; Whitney Harris &boxV; Idaho
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/toggleMenu.js"></script>
-    <script src="scripts/forecast.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/forecastPreston.js"></script>
+    <script src="scripts/townInfo.js"></script>
+    
 </body>
 </html>

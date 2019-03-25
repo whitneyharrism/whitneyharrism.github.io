@@ -1,6 +1,5 @@
-// forecast
-var openWeatherMapId = '05e096cdee24f552b3f8257736edcd2d'; // place your OpenWeatherMap id between the single quotes
-var cityId = '5604473'; // place the city id between the single quotes (e.g. 5604473 for Preston)
+var openWeatherMapId = '05e096cdee24f552b3f8257736edcd2d';
+var cityId = '5604473';
 
 var apiForecastUrl = 'https://api.openweathermap.org/data/2.5/forecast' +
     '?id=' + cityId + 

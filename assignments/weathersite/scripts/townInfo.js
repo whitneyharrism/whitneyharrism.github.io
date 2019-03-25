@@ -92,16 +92,24 @@ document.getElementById("prestonMotto").innerHTML = townInfo.towns[4].motto;
 document.getElementById("prestonYear").innerHTML = townInfo.towns[4].yearFounded;
 document.getElementById("prestonPop").innerHTML = townInfo.towns[4].currentPopulation;
 document.getElementById("prestonRain").innerHTML = townInfo.towns[4].averageRainfall;
-document.getElementById("prestonEvents").innerHTML = townInfo.towns[4].events;
+document.getElementById("prestonEvents1").innerHTML = townInfo.towns[4].events[0];
+document.getElementById("prestonEvents2").innerHTML = townInfo.towns[4].events[1];
 
 document.getElementById("sodaMotto").innerHTML = townInfo.towns[5].motto;
 document.getElementById("sodaYear").innerHTML = townInfo.towns[5].yearFounded;
 document.getElementById("sodaPop").innerHTML = townInfo.towns[5].currentPopulation;
 document.getElementById("sodaRain").innerHTML = townInfo.towns[5].averageRainfall;
-document.getElementById("sodaEvents").innerHTML = townInfo.towns[5].events;
+document.getElementById("sodaEvents1").innerHTML = townInfo.towns[5].events[0];
+document.getElementById("sodaEvents2").innerHTML = townInfo.towns[5].events[1];
 
 document.getElementById("fishMotto").innerHTML = townInfo.towns[1].motto;
 document.getElementById("fishYear").innerHTML = townInfo.towns[1].yearFounded;
 document.getElementById("fishPop").innerHTML = townInfo.towns[1].currentPopulation;
 document.getElementById("fishRain").innerHTML = townInfo.towns[1].averageRainfall;
-document.getElementById("fishEvents").innerHTML = townInfo.towns[1].events;
+document.getElementById("fishEvents1").innerHTML = townInfo.towns[1].events[0];
+document.getElementById("fishEvents2").innerHTML = townInfo.towns[1].events[1];
+
+document.getElementById("prestonEvents3").innerHTML = townInfo.towns[4].events[2];
+document.getElementById("sodaEvents3").innerHTML = townInfo.towns[5].events[2];
+document.getElementById("fishEvents3").innerHTML = townInfo.towns[1].events[2];
+document.getElementById("fishEvents4").innerHTML = townInfo.towns[1].events[3];

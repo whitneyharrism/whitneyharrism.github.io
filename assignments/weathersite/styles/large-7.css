@@ -4,9 +4,7 @@
         display:inline-flex;
         flex-direction: row;
     }
-    .firstarticle{
-        background: rgba(152, 190, 203, 0.8);
-    }
+    
     h3, p{
         color: #29195B;
     }
@@ -21,7 +19,11 @@
     .grid{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    /* .card{
-        flex: 0 0 300px;
-    } */
+    .cities{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .forecast p{
+        color: #808e92;
+        text-align: center;
+    }
 }

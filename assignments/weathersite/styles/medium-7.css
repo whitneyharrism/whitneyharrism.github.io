@@ -15,7 +15,9 @@
     .grid{
         grid-template-columns: 1fr 1fr;
     }
-    /* .card{
-        flex: 0 0 300px;
-    } */
+    
+    .cities{
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }

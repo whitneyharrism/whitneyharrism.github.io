@@ -56,6 +56,10 @@ nav li a.active {
   color: #cff0b1;
 }
 
+a{
+  text-decoration: none;
+}
+
 h2,
 h3 {
   color: #615097;
@@ -65,11 +69,8 @@ h2 {
   text-align: center;
 }
 
-.firstarticle {
-  margin-top: 5px;
-  margin-right: 5px;
-  text-align: center;
-  border: 2px solid #29195b;
+.firstarticle{
+  margin: 10px;
 }
 
 p {
@@ -88,13 +89,6 @@ body {
   margin: 0.5em;
 }
 
-#daily {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2em;
-}
-
 .grid img {
   width: 100%;
   height: 100%;
@@ -106,46 +100,13 @@ body {
   grid-template-columns: 1fr;
 }
 
-/* .home{
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column;
-}
-
-.townArticle{
-    width: 300px;
-    margin: 10px;
-    border: 2px solid #29195B;
-    padding: 2px 16px;
-    align-self: center;
-    align-self: flex-start;
-}
-
-.home .towns .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin: 10px;
-}
-
-.home .towns .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.home .towns .container {
-    padding: 2px 16px;
-}
-
-.home .towns{
-    display: flex;
-    align-items: center;
-    align-self: flex-end;
-    /* flex-flow: nowrap; */
-/* } */
 .cards {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
 }
+
 .card {
   flex: 0 0 340px;
   margin: 10px;
@@ -158,6 +119,16 @@ body {
 .card .text {
   padding: 0 20px 20px;
 }
+
+.card button{
+  display: block;
+  border: 2px solid #615097;
+  text-decoration: none;
+  margin: auto;
+  padding: 10px;
+  color: #615097;
+}
+
 .card .text > button {
   background: gray;
   border: 0;
@@ -174,14 +145,31 @@ a {
     .hide {
         display: none;
     }
-    /* .home .towns{
-        flex-flow: wrap;
+    .forecast{
+      display: none;
     }
-    .home .towns .card{
-        width: 100%;
-    } */
 }
 
+.cities{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.forcast{
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.firstarticle{
+  grid-column: 1;
+  grid-row: 1; 
+  border: 2px solid #615097;
+}
+
+.firstarticle h3{
+  text-align: center;
+}
 .forecast article {
     margin: 10px;
 }
@@ -197,4 +185,4 @@ a {
 }
 .forecast .block {
     display: block;
-}
+} 
