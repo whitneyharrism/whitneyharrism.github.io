@@ -148,23 +148,35 @@ a {
     .forecast{
       display: none;
     }
+    #townEvents{
+      grid-column: 1;
+      grid-row: 2;
+    } 
+    .firstarticle{
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .firstarticle img{
+      width: 100%;
+    }
 }
 
 .cities{
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 .forcast{
   grid-column: 1 / 2;
-  grid-row: 1;
+  grid-row: 2;
 }
 
 .firstarticle{
   grid-column: 1;
   grid-row: 1; 
-  border: 2px solid #615097;
+  border: 2px solid #437616;
 }
 
 .firstarticle h3{
@@ -186,3 +198,37 @@ a {
 .forecast .block {
     display: block;
 } 
+
+#townEvents{
+  text-align: center; 
+  border: 2px solid #437616;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+.timeline {
+  border-left: 4px solid #615097;
+  margin: auto; 
+  position: relative;
+  padding: 10px;   
+  list-style: none;
+  text-align: left;    
+  max-width: 80%;
+}
+
+ .timeline .event{
+  padding-bottom: (50px * 0.5);
+  margin-bottom: 30px;  
+  position: relative;
+}
+
+.timeline .event:last-of-type { 
+  padding-bottom: 0;
+  margin-bottom: 0;       
+}
+
+.recreation{
+  /* margin-top: 10px; */
+  border: 2px solid #437889;
+  padding: 10px;
+}

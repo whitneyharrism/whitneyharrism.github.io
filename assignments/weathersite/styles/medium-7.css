@@ -18,6 +18,18 @@
     
     .cities{
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
-    
+
+    .forecast{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #townEvents{
+        grid-column: 1 / 3;
+        grid-row: 2;
+    } 
+    .firstarticle img{
+        width: 100%;
+    }
 }
