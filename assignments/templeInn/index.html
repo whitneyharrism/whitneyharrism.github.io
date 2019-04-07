@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
     <title>Temple Inn & Suites</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </nav>	
+    <nav class="sidebar">
+        <div id="templeLogo">
+        <!-- <img class="templeLogo" src="images/salt-lake-temple-logo.png" alt="Temple Logo">
+        <img clss="templeText" src="images/temple-logo.png" alt="Temple Inn & Suites"> -->
+        <img src="images/inn-logo (1).png" alt="Temple Logo">
+        </div>
+        <a class="active" href="index.html">Home</a>
+        <a href="#"><button onclick="toggleMenu()">Temples</button></a>
+        <div id="temples" class="hide">
+            <ul>
+                <li><a href="#">Temple 1</a></li>
+                <li><a href="#">Temple 2</a></li>
+                <li><a href="#">Temple 3</a></li>
+                <li><a href="#">Temple 4</a></li>
+            </ul>
+        </div>
+        <a href="#">Reservations</a>
+        <a href="#"><button onclick="toggleMenu()">Services</button></a>
+        <div id="services" class="hide">
+            <ul>
+                <li><a href="#">Reception</a></li>
+                <li><a href="#">Full-Time Missionaries</a></li>
+            </ul>
+        </div>
+        <a href="#">Contact Us</a>
+    </nav>
+    <script src="scripts/toggleTempleMenu.js"></script>	
 </body>
 </html>
