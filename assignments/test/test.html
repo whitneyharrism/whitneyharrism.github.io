@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,62 +11,63 @@
     <link rel="stylesheet" href="styles/test-large.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <div id="sitetitle">
-            <!-- <img src="images/weather-min.png" alt="Awesome image"> -->
-            <section class="headings">
-                <h1>South Eastern Idaho</h1>
-                <div class="motto">Weather for You!</div>
-            </section>
-        </div>
-        <nav>
-            <ul id="primaryNav">
-                <li><button onclick="toggleMenu()"><a class="menu" href="#"><b>&equiv;</b> Menu</a></li></button>
-                <div id="list" class="">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="preston-7.html">Preston</a></li>                
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="stormcenter.html">Storm Center</a></li>
-                    <li><a href="gallery-7.html">Gallery</a></li>
+    <div class="content">
+        <div class="container">
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img id="myImg" src="images/Idaho_Falls_Temple_small.jpg" style="width:100%"
+                        alt="Idaho Falls, ID Temple">
                 </div>
-            <ul>
-        </nav>
-    </header>
-    <main>
-        <div id="content">
-            <h1>Timeline Concept</h1>
-    
-            <ul class="timeline">
-                <li class="event" >
-                    <h3>Registration</h3>
-                    <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
-                </li>
-                <li class="event">
-                    <h3>Opening Ceremony</h3>
-                    <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP & Busta Rhymes as an
-                        opening show.</p>
-                </li>
-                <li class="event">
-                    <h3>Main Event</h3>
-                    <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get
-                        ready!</p>
-                </li>
-                <li class="event">
-                    <h3>Closing Ceremony</h3>
-                    <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own
-                        glory.</p>
-                </li>
-            </ul>
+                <div class="column">
+                    <img id="myImg2" src="images/Logan_Utah_Temple_small.jpg" style="width:100%" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img id="myImg3" src="images/Salt_Lake_LDS_Temple_small.jpg" style="width:100%"
+                        alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img id="myImg4" src="images/San_Diego_LDS_Temple,_twilight_small.jpg" style="width:100%"
+                        alt="Stuff">
+                </div>
+            </div>
         </div>
-    </main>
-    <footer>
-            &copy; <span id="currentDate"></span>&boxV; Whitney Harris &boxV; Idaho
-    </footer>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/toggleMenu.js"></script>
-    <script src="scripts/winchill.js"></script>
-    <script src="scripts/weatherapi.js"></script>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <img src="images/Idaho_Falls_Temple_fixed.jpg" style="width:100%;" alt="">
+                <p>Add Summary</p>
+            </div>
+        </div>
+        <div class="modal2">
+            <div class="modal-content">
+                <span class="close-button2">×</span>
+                <img src="images/Idaho_Falls_Temple_fixed.jpg" style="width:100%;" alt="">
+                <p>Add Summary</p>
+            </div>
+        </div>
+        <div class="modal3">
+            <div class="modal-content">
+                <span class="close-button3">×</span>
+                <img src="images/Idaho_Falls_Temple_fixed.jpg" style="width:100%;" alt="">
+                <p>Add Summary</p>
+            </div>
+        </div>
+        <div class="modal4">
+            <div class="modal-content">
+                <span class="close-button4">×</span>
+                <img src="images/Idaho_Falls_Temple_fixed.jpg" style="width:100%;" alt="">
+                <p>Add Summary</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/modalIdaho.js"></script>
+    <script src="scripts/modalLogan.js"></script>
+    <script src="scripts/modalSalt.js"></script>
+    <script src="scripts/modalSan.js"></script>
 </body>
+
 </html>
