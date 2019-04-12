@@ -13,61 +13,88 @@
 </head>
 
 <body>
+    <nav class="sidebar">
+        <div id="templeLogo">
+            <!-- <img class="templeLogo" src="images/salt-lake-temple-logo.png" alt="Temple Logo">
+        <img clss="templeText" src="images/temple-logo.png" alt="Temple Inn & Suites"> -->
+            <img src="images/inn-logo (1).png" alt="Temple Logo">
+        </div>
+        <a class="active" href="index.html">Home</a>
+        <a href="#"><button onclick="toggleTempleMenu()">Temples</button></a>
+        <div id="temples" class="hide">
+            <ul>
+                <li><a href="#">Temple 1</a></li>
+                <li><a href="#">Temple 2</a></li>
+                <li><a href="#">Temple 3</a></li>
+                <li><a href="#">Temple 4</a></li>
+            </ul>
+        </div>
+        <a href="#">Reservations</a>
+        <a href="#"><button onclick="toggleServiceMenu()">Services</button></a>
+        <div id="services" class="hide">
+            <ul>
+                <li><a href="#">Reception</a></li>
+                <li><a href="#">Full-Time Missionaries</a></li>
+            </ul>
+        </div>
+        <a href="#">Contact Us</a>
+    </nav>
     <div class="content">
         <div class="container">
             <!-- Thumbnail images -->
             <div class="row">
                 <div class="column">
-                    <img id="myImg" src="images/Idaho_Falls_Temple_small.jpg" style="width:100%"
+                    <img class="click" data-modal="modal" src="images/Idaho_Falls_Temple_small.jpg" style="width:100%"
                         alt="Idaho Falls, ID Temple">
                 </div>
                 <div class="column">
-                    <img id="myImg2" src="images/Logan_Utah_Temple_small.jpg" style="width:100%" alt="Cinque Terre">
+                    <img class="click" data-modal="modal2" src="images/Logan_Utah_Temple_small.jpg" style="width:100%" alt="Cinque Terre">
                 </div>
                 <div class="column">
-                    <img id="myImg3" src="images/Salt_Lake_LDS_Temple_small.jpg" style="width:100%"
+                    <img class="click" data-modal="modal3" src="images/Salt_Lake_LDS_Temple_small.jpg" style="width:100%"
                         alt="Mountains and fjords">
                 </div>
                 <div class="column">
-                    <img id="myImg4" src="images/San_Diego_LDS_Temple,_twilight_small.jpg" style="width:100%"
+                    <img class="click" data-modal="modal4" src="images/San_Diego_LDS_Temple,_twilight_small.jpg" style="width:100%"
                         alt="Stuff">
                 </div>
             </div>
         </div>
-        <div class="modal">
+        <div id="modal">
             <div class="modal-content">
                 <span class="close-button">×</span>
                 <img src="images/Idaho_Falls_Temple_fixed.jpg" style="width:100%;" alt="">
                 <p>Add Summary</p>
             </div>
         </div>
-        <div class="modal2">
-            <div class="modal-content">
+        <div id="modal2">
+            <div class="modal-content1">
                 <span class="close-button2">×</span>
-                <img src="images/Idaho_Falls_Temple_fixed.jpg" style="width:100%;" alt="">
+                <img src="images/Idaho_Falls_Temple.jpg" style="width:100%;" alt="">
                 <p>Add Summary</p>
             </div>
         </div>
-        <div class="modal3">
-            <div class="modal-content">
+        <div id="modal3">
+            <div class="modal-content2">
                 <span class="close-button3">×</span>
-                <img src="images/Idaho_Falls_Temple_fixed.jpg" style="width:100%;" alt="">
+                <img src="images/Logan_Utah_Temple.jpg" style="width:100%;" alt="">
                 <p>Add Summary</p>
             </div>
         </div>
-        <div class="modal4">
-            <div class="modal-content">
+        <div id="modal4">
+            <div class="modal-content3">
                 <span class="close-button4">×</span>
                 <img src="images/Idaho_Falls_Temple_fixed.jpg" style="width:100%;" alt="">
                 <p>Add Summary</p>
             </div>
         </div>
     </div>
-    <script src="scripts/slideshow.js"></script>
-    <script src="scripts/modalIdaho.js"></script>
+    <script src="scripts/toggleTempleMenu.js"></script>
+    <script src="scripts/toggleServiceMenu.js"></script>
+    <!-- <script src="scripts/modalIdaho.js"></script> -->
     <script src="scripts/modalLogan.js"></script>
-    <script src="scripts/modalSalt.js"></script>
-    <script src="scripts/modalSan.js"></script>
+    <!-- <script src="scripts/modalSalt.js"></script>
+    <script src="scripts/modalSan.js"></script> -->
 </body>
 
 </html>

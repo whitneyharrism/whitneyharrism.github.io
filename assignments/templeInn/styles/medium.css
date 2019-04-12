@@ -3,11 +3,31 @@
     width: 100%;
     height: auto;
     position: relative;
+    padding-bottom: 5px;
   }
   .sidebar a {
-    float: left;
+    text-align: center;
+    float: none;
   }
+  .sidebar button{
+    text-align: center;
+  } 
   div.content {
     margin-left: 0;
+  }
+  .content, footer{
+    margin-left: 0;
+  }
+  #myImg{
+    opacity: 1;
+  }
+  .column {
+    float: left;
+    width: 50%;
+  }
+  #templeLogo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
