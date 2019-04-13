@@ -14,35 +14,62 @@
         <div id="templeLogo">
             <img src="images/inn-logo (1).png" alt="Temple Logo">
         </div>
-        <a class="active" href="index.html">Home</a>
-        <a href="#"><button onclick="toggleTempleMenu()">Temples</button></a>
+        <a href="index.html">Home</a>
+        <a class="active" href="#"><button onclick="toggleTempleMenu()" class="active">Temples</button></a>
         <div id="temples" class="hide">
             <ul>
-                <li><a href="saltLake.html">Salt Lake City, Utah</a></li>
+                <li><a class="active" href="saltLake.html">Salt Lake City, Utah</a></li>
                 <li><a href="logan.html">Logan, Utah</a></li>
                 <li><a href="idahoFalls.html">Idaho Falls, Idaho</a></li>
                 <li><a href="sanDiego.html">San Diego, California</a></li>
             </ul>
         </div>
-        <a href="#">Reservations</a>
+        <a href="reservations.html">Reservations</a>
         <a href="#"><button onclick="toggleServiceMenu()">Services</button></a>
         <div id="services" class="hide">
             <ul>
-                <li><a href="#">Reception</a></li>
-                <li><a href="#">Full-Time Missionaries</a></li>
+                <li><a href="specialServices.html">Special Services</a></li>
+                <li><a href="reception.html">Reception</a></li>
+                <li><a href="missionary.html">Full-Time Missionaries</a></li>
             </ul>
         </div>
-        <a href="#">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
     <main>
         <div class="content">
             <div class="templeInfo">
                 <img src="images/Salt_Lake_LDS_Temple_fixed.jpg" alt="Salt Lake City, UT Temple">
                 <div class="info">
+                    <div class="forecast">
+                        <h3>Five-Day Forecast</h3>
+                        <section>
+                            <article>
+                                <span id="day1Name" class="block"></span>
+                                <span id="day1Temp"></span>&deg; F
+                            </article>
+                            <article>
+                                <span id="day2Name" class="block"></span>
+                                <span id="day2Temp"></span>&deg; F
+                            </article>
+                            <article>
+                                <span id="day3Name" class="block"></span>
+                                <span id="day3Temp"></span>&deg; F
+                            </article>
+                            <article>
+                                <span id="day4Name" class="block"></span>
+                                <span id="day4Temp"></span>&deg; F
+                            </article>
+                            <article>
+                                <span id="day5Name" class="block"></span>
+                                <span id="day5Temp"></span>&deg; F
+                            </article>
+                        </section>
+                        <p>Weather and Forecast from OpenWeatherMap</p>
+                    </div>
                     <p><b>Address: </b>50 W North Temple St - Salt Lake City, UT - 84150</p>
                     <p><b>Telephone: </b>(1) 801-240-2640</p>
-                    <p><b>Email: </b>Follow this <a
-                            href="https://www.lds.org/temples/details/salt-lake-temple?lang=eng">link</a> to send an email.</p>
+                    <p><b>Email: </b>Follow this <a href="https://www.lds.org/temples/details/salt-lake-temple?lang=eng">link</a> to
+                        send an email.</p>
                     <p><b>Services: </b>
                         <ul>
                             <li>Clothing rental</li>
@@ -51,38 +78,38 @@
                         </ul>
                     </p>
                     <p><b>Schedule an Ordinance/Session today!</b> Follow the <a
-                            href="https://www.lds.org/temples/details/salt-lake-temple?lang=eng">link</a> to schedule with this temple.</p>
+                            href="https://www.lds.org/temples/details/salt-lake-temple?lang=eng">link</a> to schedule with this temple.
+                    </p>
+                    <p><b>Temple Closures: </b>
+                        <ul>
+                            <li><span id="date1"></span></li>
+                            <li><span id="date2"></span></li>
+                            <li><span id="date3"></span></li>
+                            <li><span id="date4"></span></li>
+                            <li><span id="date5"></span></li>
+                            <li><span id="date6"></span></li>
+                            <li><span id="date7"></span></li>
+                        </ul>
+                    </p>
                 </div>
                 <div class="history">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio ipsa, debitis deserunt fugit corrupti qui,
-                        labore eaque exercitationem ullam quaerat totam sint nemo. Voluptas animi tenetur sunt itaque culpa. Lorem
-                        ipsum
-                        dolor sit amet consectetur, adipisicing elit. Quam dolore, pariatur perspiciatis perferendis maxime
-                        laudantium?
-                        Vitae incidunt ullam suscipit quibusdam. Voluptates cupiditate nemo expedita quod ratione sunt reiciendis
-                        quis
-                        blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aut cupiditate, assumenda
-                        laborum
-                        harum dolores natus doloremque fuga voluptate fugit laudantium reiciendis iste ea incidunt eum consequatur
-                        minus
-                        nulla accusamus.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptas facilis, molestiae neque ipsam ipsa
-                        nesciunt eius enim voluptatem eum odit rem fugiat qui non magnam veritatis debitis exercitationem deserunt?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio obcaecati veritatis, voluptatem, ipsam sequi
-                        minus maxime ipsum eaque voluptates provident non magnam assumenda quam esse voluptatibus laboriosam aliquid
-                        velit fuga. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius commodi veniam et! Tenetur
-                        assumenda
-                        quam eveniet sed, rem molestias quibusdam, impedit incidunt earum praesentium recusandae omnis reprehenderit
-                        facere sequi velit!</p>
+                    <h2>History of the Salt Lake Temple</h2>
+                    <p>It was the fourth temple built in Utah, but the first in the Salt Lake Valley. It took 40 years to build, though
+                        the highly ornate interior was built in just one. During its construction, two other temples were built and
+                        finished.</p>
+                    <p>After its completion, President Wilford Woodruff dedicated it, and it remains to be the only one that was
+                        dedicated by him. This temple was also dedicated 3 years before Utah became a state in 1896. As of 2019, this
+                        temple is the largest (most square footage) temple of the Church.</p>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <a href="#"><button class="goToReservation">Make A Reservation Today!</button></a>
+        <a href="reservations.html"><button class="goToReservation">Make A Hotel Reservation Nearby Today!</button></a>
     </footer>
     <script src="scripts/toggleTempleMenu.js"></script>
     <script src="scripts/toggleServiceMenu.js"></script>
+    <script src="scripts/forecastSaltLake.js"></script>
+    <script src="scripts/closingDatesSaltLake.js"></script>
 </body>
 </html>

@@ -22,6 +22,8 @@ body {
 }
 
 .sidebar button{
+  position: relative;
+  right: 5px;
   display: block;
   background-color: transparent;
   border: none;
@@ -34,7 +36,7 @@ body {
   cursor: pointer;
 }
 
-.sidebar a.active {
+.sidebar .active {
   background-color: #e6e2dd;
   color: #d48166;
 }
@@ -46,6 +48,10 @@ body {
 
 .content, footer{
   margin-left: 250px;
+}
+
+.content{
+  padding: 10px;
 }
 
 #temples ul, #services ul{
@@ -74,7 +80,6 @@ body {
   clear: both;
 }
 
-/* Six columns side by side */
 .column {
   float: left;
   width: 25%;
@@ -124,6 +129,90 @@ a{
   text-decoration: none;
 }
 
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+form .container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+} 
+
+.flex-outer {
+  max-width: 800px;
+  margin: auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #373a36;
+  color: #e6e2dd;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.container{
+  padding-top: 20px;
+}
+
 .about{
   padding: 1rem;
 }
@@ -134,4 +223,137 @@ a{
 
 .info, .history{
   margin: 10px;
+}
+
+.forecast{
+  text-align: center;
+  border: 2px solid #373a36;
+}
+
+.forecast section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+}
+.forecast{
+  display: block;
+} 
+
+.forecast article {
+  margin: 10px;
+}
+
+.forecast p{
+  opacity: 0.5;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+.services{
+  margin-top:0;
+  padding: 10px;
+  text-align: center;
+}
+
+.services h2{
+  margin-top:0;
+}
+
+.suite{
+  width: 100%;
+}
+
+#wedding{
+  padding: 100px;
+  font-size: 1.5rem;
+}
+
+.item{
+  text-align: left;
+}
+
+.mySlides img {
+  vertical-align: middle;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#sub .column {
+  float: left;
+  width: 25%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+form h2{
+  text-align: center;
+  padding: 10px;
+}
+
+h1{
+  margin-top: 0;
+}
+
+#pics {
+  padding-top: 10px;
+  margin: auto;
+  width: 90%;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <title>Thank You</title>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div id="templeLogo">
+            <img src="images/inn-logo (1).png" alt="Temple Logo">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#"><button onclick="toggleTempleMenu()">Temples</button></a>
+        <div id="temples" class="hide">
+            <ul>
+                <li><a href="saltLake.html">Salt Lake City, Utah</a></li>
+                <li><a href="logan.html">Logan, Utah</a></li>
+                <li><a href="idahoFalls.html">Idaho Falls, Idaho</a></li>
+                <li><a href="sanDiego.html">San Diego, California</a></li>
+            </ul>
+        </div>
+        <a href="reservations.html">Reservations</a>
+        <a href="#"><button onclick="toggleServiceMenu()">Services</button></a>
+        <div id="services" class="hide">
+            <ul>
+                <li><a href="specialServices.html">Special Services</a></li>
+                <li><a href="reception.html">Reception</a></li>
+                <li><a href="missionary.html">Full-Time Missionaries</a></li>
+            </ul>
+        </div>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <div class="content">
+            <h2>Thank you for contacting us. You will receive a confirmation email shortly. Replies take up to two days.</h2>
+        </div>
+    </main>
+    <script src="scripts/toggleTempleMenu.js"></script>
+    <script src="scripts/toggleServiceMenu.js"></script>
+</body>
+
+</html>

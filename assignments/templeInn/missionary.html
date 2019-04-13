@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <title>Full-Time Missionaries</title>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div id="templeLogo">
+            <img src="images/inn-logo (1).png" alt="Temple Logo">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#"><button onclick="toggleTempleMenu()">Temples</button></a>
+        <div id="temples" class="hide">
+            <ul>
+                <li><a href="saltLake.html">Salt Lake City, Utah</a></li>
+                <li><a href="logan.html">Logan, Utah</a></li>
+                <li><a href="idahoFalls.html">Idaho Falls, Idaho</a></li>
+                <li><a href="sanDiego.html">San Diego, California</a></li>
+            </ul>
+        </div>
+        <a href="reservations.html">Reservations</a>
+        <a class="active" href="#"><button onclick="toggleServiceMenu()" class="active">Services</button></a>
+        <div id="services" class="hide">
+            <ul>
+                <li><a href="specialServices.html">Special Services</a></li>
+                <li><a href="reception.html">Reception</a></li>
+                <li><a class="active" href="missionary.html">Full-Time Missionaries</a></li>
+            </ul>
+        </div>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <div class="content">
+            <div class="slideshow">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/hotel1_slide.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/hotel2_slide.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/hotel3_slide.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/hotel4_slide.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+        
+                <div class="row" id="sub">
+                    <div class="column">
+                        <img class="demo cursor" src="images/hotel1_slide_small.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="The Woods">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/hotel2_slide_small.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/hotel3_slide_small.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/hotel4_slide_small.jpg" style="width:100%" onclick="currentSlide(4)"
+                            alt="Northern Lights">
+                    </div>
+            </div>
+            <div class="services">
+                <h2>Full-Time Missionaries</h2>
+                <p>We offer long-term stay suites for full-time temple missionaries and their families.</p>
+                <div class="grid">
+                    <div class="item">
+                        <h3>All Suites include and have access to the following:</h3>
+                        <ul>
+                            <li>Work Desk</li>
+                            <li>Attached bathroom</li>
+                            <li>Living Area</li>
+                            <li>Dining/Kitchen Area</li>
+                            <li>Washer and Dryer in the building</li>
+                            <li>Dish Network</li>
+                            <li>Reserved parking</li>
+                            <li>Workout rooms within the building</li>
+                            <li>Playroom and limited babysitting for children</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>Types of Suites (and amenities specific to them)</h3>
+                        <ul>
+                            <li>1 Bedroom</li>
+                            <ul>
+                                <li>One king sized bed in a master bedroom</li>
+                                <li>40inch screen TV</li>
+                            </ul>
+                            <li>2 Bedroom</li>
+                            <ul>
+                                <li>One king sized bed in a master bedroom</li>
+                                <li>One twin sized bed in its own room</li>
+                                <li>50inch screen TV</li>
+                            </ul>
+                            <li>3 Bedroom</li>
+                            <ul>
+                                <li>One king sized bed in a master bedroom</li>
+                                <li>two twin sized beds in their own rooms</li>
+                                <li>60inch screen TV</li>
+                                <li>Access to a small balcony</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <form action="emailConfirm.html" method="get">
+                <h2>Have Questions?</h2>
+                <ul class="flex-outer">
+                    <li>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Enter your first name here" required>
+                    </li>
+                    <li>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Enter your last name here" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email here" required>
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea rows="6" id="message" placeholder="Enter your message here"></textarea required>
+                    </li>
+                    <li>
+                        <button type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="reservations.html"><button class="goToReservation">Make A Reservation Today!</button></a>
+    </footer>
+    <script src="scripts/toggleTempleMenu.js"></script>
+    <script src="scripts/toggleServiceMenu.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+
+</html>

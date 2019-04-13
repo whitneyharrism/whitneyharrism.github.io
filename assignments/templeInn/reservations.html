@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <title>Reservations</title>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div id="templeLogo">
+            <img src="images/inn-logo (1).png" alt="Temple Logo">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#"><button onclick="toggleTempleMenu()">Temples</button></a>
+        <div id="temples" class="hide">
+            <ul>
+                <li><a href="saltLake.html">Salt Lake City, Utah</a></li>
+                <li><a href="logan.html">Logan, Utah</a></li>
+                <li><a href="idahoFalls.html">Idaho Falls, Idaho</a></li>
+                <li><a href="sanDiego.html">San Diego, California</a></li>
+            </ul>
+        </div>
+        <a class="active" href="reservations.html">Reservations</a>
+        <a href="#"><button onclick="toggleServiceMenu()">Services</button></a>
+        <div id="services" class="hide">
+            <ul>
+                <li><a href="specialServices.html">Special Services</a></li>
+                <li><a href="reception.html">Reception</a></li>
+                <li><a href="missionary.html">Full-Time Missionaries</a></li>
+            </ul>
+        </div>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <div class="content">
+            <div class="container">
+                <form action="confirmation.html" method="get">
+                    <ul class="flex-outer">
+                        <li>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="Enter your first name here" required>
+                        </li>
+                        <li>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Enter your last name here" required>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email here" required>
+                        </li>
+                        <li>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone here" required>
+                        </li>
+                        <li>
+                            <label for="location">Location</label>
+                            <input type="list" list="location" name="location" required>
+                            <datalist id="location">
+                                <option value="Salt Lake City, UT">
+                                <option value="Logan, UT">
+                                <option value="Idaho Falls, ID">
+                                <option value="San Diego, CA">
+                            </datalist>
+                        </li>
+                        <li>
+                            <label for="arrival">Arrival </label>
+                            <input type="date" name="arrival" id="arrival" required>
+                        </li>
+                        <li>
+                            <label for="departure">Departure </label>
+                            <input type="date" name="departure" id="departure" required>
+                        </li>
+                        <li>
+                            <label for="roomType">Room Type</label>
+                            <input type="list" list="roomType" name="roomType" required>
+                            <datalist id="roomType">
+                                <option value="1 Bedroom">
+                                <option value="2 Bedroom">
+                                <option value="3 Bedroom">
+                                <option value="Reception Hall">
+                            </datalist>
+                        </li>
+                        <li>
+                            <p>Number of Rooms (Choose 1 if reserving Reception Hall)</p>
+                            <ul class="flex-inner">
+                                <li>
+                                    <input type="checkbox" id="one">
+                                    <label for="one">1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="two">
+                                    <label for="two">2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="3">
+                                    <label for="3">3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="four">
+                                    <label for="four">4</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="5">
+                                    <label for="5">5</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="six">
+                                    <label for="six">6</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="sevenPlus">
+                                    <label for="sevenPlus">7+</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="message">Special Accomodations</label>
+                            <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/toggleTempleMenu.js"></script>
+    <script src="scripts/toggleServiceMenu.js"></script>
+</body>
+
+</html>

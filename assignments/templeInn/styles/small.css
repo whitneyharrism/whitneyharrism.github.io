@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .content, footer{
     margin-left: 0;
   }
@@ -8,5 +8,9 @@
   .column {
     float: left;
     width: 100%;
+  }
+
+  .forecast{
+    display: none;
   }
 }

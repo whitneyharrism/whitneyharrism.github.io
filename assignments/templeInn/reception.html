@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <title>Reception</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div id="templeLogo">
+            <img src="images/inn-logo (1).png" alt="Temple Logo">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#"><button onclick="toggleTempleMenu()">Temples</button></a>
+        <div id="temples" class="hide">
+            <ul>
+                <li><a href="saltLake.html">Salt Lake City, Utah</a></li>
+                <li><a href="logan.html">Logan, Utah</a></li>
+                <li><a href="idahoFalls.html">Idaho Falls, Idaho</a></li>
+                <li><a href="sanDiego.html">San Diego, California</a></li>
+            </ul>
+        </div>
+        <a href="reservations.html">Reservations</a>
+        <a class="active" href="#"><button onclick="toggleServiceMenu()" class="active">Services</button></a>
+        <div id="services" class="hide">
+            <ul>
+                <li><a href="specialServices.html">Special Services</a></li>
+                <li><a class="active" href="reception.html">Reception</a></li>
+                <li><a href="missionary.html">Full-Time Missionaries</a></li>
+            </ul>
+        </div>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <div class="content">
+            <img class="suite" src="images/wedding3_fixed.jpg" alt="Reception Hall" width="100%">
+            <div class="services">
+                <h1>Wedding Reception</h1>
+                <h2>We offer a wedding reception hall that can be easily customized.</h2>
+                <div class="grid">
+                    <div class="item" id="wedding">
+                        <h3>Services and Capacity</h3>
+                        <ul>
+                            <li>Free access to changing rooms and bathroom facilities for guests and bridal parties</li>
+                            <li>Temple history themed reception and sitting area</li>
+                            <li>Can accommodate parties up to 100 guests</li>
+                            <li>Can provide a simple catering menu </li> 
+                            <li>Can provide kitchen access for food preparation and serving.</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="images/wedding1_thumb.jpg" alt="Decorative Table">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="reservations.html"><button class="goToReservation">Make A Reservation Today!</button></a>
+    </footer>
+    <script src="scripts/toggleTempleMenu.js"></script>
+    <script src="scripts/toggleServiceMenu.js"></script>
+</body>
+</html>

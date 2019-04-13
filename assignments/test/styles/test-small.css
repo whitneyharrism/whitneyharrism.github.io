@@ -1,3 +1,74 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #d48166;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: #e6e2dd;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidebar button{
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #e6e2dd;
+  font-size: 1rem;
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar a.active {
+  background-color: #e6e2dd;
+  color: #d48166;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #373a36;
+  color: white;
+}
+
+.content, footer{
+  margin-left: 250px;
+}
+
+#temples ul, #services ul{
+  list-style-type: none;
+  margin: 0px 0px;
+  padding-left: 0px;
+}
+
+#temples li, #services ul{
+  text-align: center;
+}
+
+#templeLogo{
+  padding: 10px;
+  background: #373a36;
+}
+#templeLogo img{
+  width: 230px;
+}
+
+.hide {
+  display: none;
+}
 .row:after {
   display: table;
   clear: both;
@@ -9,52 +80,165 @@
   width: 25%;
 }
 
-#myImg, #myImg2, #myImg3, #myImg4{
-  border-radius: 5px;
+#myImg{
+  border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
+  opacity: 0.7;
 }
 
-#myImg:hover {opacity: 0.7;}
-#myImg2:hover {opacity: 0.7;}
-#myImg3:hover {opacity: 0.7;}
-#myImg4:hover {opacity: 0.7;}
+#myImg:hover {opacity: 1;}
 
-.modal, .modal2, .modal3, .modal4{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+.column p{
+  padding-left: 1rem;
 }
-.modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 1rem 1.5rem;
-  width: 80%;
-  border-radius: 0.5rem;
-  overflow: auto;
+
+footer{
+  color: #e6e2dd;
+  padding: 1rem;
 }
-.close-button, .close-button2, .close-button3, .close-button4{
-  float: right;
-  width: 1.5rem;
-  line-height: 1.5rem;
+
+.goToReservation {
+  background-color: #e6e2dd;
+  border: 2px solid #d48166;
+  color: #d48166;
+  padding: 16px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
   cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: lightgray;
+  width: 100%;
+  font-size: 2rem;
 }
-.show-modal {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+
+.goToReservation:hover {
+  background-color: #d48166;
+  color: #e6e2dd;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+} 
+
+.flex-outer {
+  max-width: 800px;
+  margin: auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #373a36;
+  color: #e6e2dd;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.container{
+  padding-top: 20px;
+}
+
+.about{
+  padding: 1rem;
+}
+
+.templeInfo img {
+  width: 100%;
+}
+
+.info, .history{
+  margin: 10px;
+}
+
+.forecast{
+  text-align: center;
+  border: 2px solid #373a36;
+}
+
+.forecast section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+}
+.forecast{
+  display: block;
+} 
+
+.forecast article {
+  margin: 10px;
+}
+
+.forecast p{
+  opacity: 0.5;
 }
