@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Amiri', serif;
 }
 
 .sidebar {
@@ -34,6 +34,7 @@ body {
   width: 100%;
   text-align: left;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .sidebar .active {
@@ -203,6 +204,7 @@ form .container * {
   text-transform: uppercase;
   letter-spacing: .09em;
   border-radius: 2px;
+  font-family: inherit;
 }
 
 .flex-inner li {
@@ -356,4 +358,8 @@ h1{
   padding-top: 10px;
   margin: auto;
   width: 90%;
+}
+
+footer button{
+  font-family: inherit;
 }
